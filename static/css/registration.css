@@ -1,0 +1,35 @@
+.registration-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h3 {
+    margin-top: 20px;
+    color: #b30000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+}
+
+.btn-submit {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-reset {
+    background-color: #eee;
+    padding: 10px 20px;
+}

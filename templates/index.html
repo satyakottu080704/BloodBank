@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome to the Blood Bank</h2>
+<p>If you need blood or wish to donate, please choose an option below.</p>
+
+<div class="cta-buttons">
+    <a href="{{ url_for('register') }}" class="btn-primary">Register as Donor</a>
+    <a href="{{ url_for('blood') }}" class="btn-secondary">Request Blood</a>
+    <link rel="stylesheet" href='static\css\index.css'>
+</div>
+
+<hr>
+
+<div class="blood-bank-info">
+    <h3>About Our Blood Bank</h3>
+    <p>Welcome to our comprehensive Blood Bank Management System. We are dedicated to saving lives through safe and
+        efficient blood donation services.</p>
+
+    <div class="features">
+        <h4>Our Services:</h4>
+        <ul>
+            <li><strong>Blood Donation:</strong> Safe and hygienic blood collection</li>
+            <li><strong>Blood Testing:</strong> Comprehensive screening for all donated blood</li>
+            <li><strong>Emergency Supply:</strong> 24/7 emergency blood availability</li>
+            <li><strong>Donor Management:</strong> Complete donor registration and tracking</li>
+        </ul>
+    </div>
+
+    <div class="donation-process">
+        <h4>Donation Process:</h4>
+        <ol>
+            <li><strong>Registration:</strong> Complete donor registration with personal details</li>
+            <li><strong>Screening:</strong> Health check and eligibility verification</li>
+            <li><strong>Donation:</strong> Safe blood collection process</li>
+            <li><strong>Testing:</strong> Blood screening for safety</li>
+            <li><strong>Storage:</strong> Proper storage and inventory management</li>
+        </ol>
+    </div>
+
+    <div class="eligibility">
+        <h4>Donor Eligibility:</h4>
+        <ul>
+            <li>Age: 18–65 years</li>
+            <li>Weight: Minimum 50 kg</li>
+            <li>Hemoglobin: 12.5 g/dl or higher</li>
+            <li>Good general health</li>
+            <li>No recent surgeries or illnesses</li>
+        </ul>
+    </div>
+
+    <div class="blood-groups">
+        <h4>Blood Groups We Accept:</h4>
+        <div class="blood-types">
+            <span class="blood-type">A+</span>
+            <span class="blood-type">A-</span>
+            <span class="blood-type">B+</span>
+            <span class="blood-type">B-</span>
+            <span class="blood-type">AB+</span>
+            <span class="blood-type">AB-</span>
+            <span class="blood-type">O+</span>
+            <span class="blood-type">O-</span>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h4>Contact Information:</h4>
+        <p><strong>Address:</strong> 123 Medical Center Drive, Healthcare City</p>
+        <p><strong>Phone:</strong> (555) 123-4567</p>
+        <p><strong>Email:</strong> info@bloodbank.com</p>
+        <p><strong>Emergency Hotline:</strong> (555) 999-8888</p>
+    </div>
+</div>
+{% endblock %}
